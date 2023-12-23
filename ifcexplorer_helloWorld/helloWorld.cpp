@@ -1,5 +1,7 @@
 #include "helloWorld.h"
 
+#include <stdutils/utf8.hpp>
+
 HelloWorld::HelloWorld(IfcDB::Populationi* pDB)
   : m_pDB(pDB)
 {

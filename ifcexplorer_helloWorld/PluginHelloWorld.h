@@ -35,10 +35,14 @@ class PluginHelloWorld : public sdm::plugin::Plugin
     sdm::plugin::PluginInfo getInfo() const override;
     std::vector<sdm::plugin::Feature*> getFeatures() const override;
 
+    sdm::plugin::ComponentInfo getComponentInfo(const sdm::plugin::RequiredComponent& requiredComponent) const override;
+    const sdm::plugin::InitializationState& getInitializationState() const override;
+
     IfcDB::Populationi* m_db = nullptr;
 
   private:
     sdm::plugin::DocumentObserverImpl m_documentObserver;
     sdm::plugin::MessageDialogFeatureHelper m_messageDialog;
     HelloWorldAction m_HelloWorldAction{ m_messageDialog };
+    sdm::plugin::InitializationState m_initState;
 };

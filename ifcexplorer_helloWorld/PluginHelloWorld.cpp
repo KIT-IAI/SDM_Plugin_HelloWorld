@@ -1,6 +1,10 @@
 ﻿#include "PluginHelloWorld.h"
 #include "helloWorld.h"
 
+#include "IFCDBInterfaceVersion.hpp"
+#include "PluginInterfaceVersion.hpp"
+#include "ComponentRegistry.hpp"
+
 using namespace std;
 using namespace sdm::plugin;
 
@@ -52,3 +56,16 @@ std::vector<Feature*> PluginHelloWorld::getFeatures() const
   return features;
 }
 
+ComponentInfo PluginHelloWorld::getComponentInfo(const RequiredComponent& requiredComponent) const
+{
+  ComponentRegistry availableComponents;
+  availableComponents.addAvailable(IFCDB_INTERFACE_COMPONENT_NAME, IFCDB_INTERFACE_COMPONENT_VERSION, IFCDB_INTERFACE_COMPONENT_HINT);
+  availableComponents.addAvailable(PLUGIN_INTERFACE_COMPONENT_NAME, PLUGIN_INTERFACE_COMPONENT_VERSION, PLUGIN_INTERFACE_COMPONENT_HINT);
+
+  return availableComponents.getInfo(requiredComponent);
+}
+
+const sdm::plugin::InitializationState& PluginHelloWorld::getInitializationState() const
+{
+  return m_initState;
+}
