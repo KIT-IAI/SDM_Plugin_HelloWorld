@@ -1,6 +1,9 @@
 # Hello World PlugIn Example
 
-See "Releases" to find a buildable package of the required precompiled libraries.
+See how to use the PlugIn interface, how the internal database can be accessed and how results can be displayed in a simple dialog.
 
 ## 
   
+## Dependencies
+
+No further dependencies
