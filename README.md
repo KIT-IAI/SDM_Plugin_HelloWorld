@@ -10,6 +10,8 @@ See how to use the PlugIn interface, how the internal database can be accessed a
 
 No further dependencies
 
+## How to cite
+
 ```bibtex
 @software{SDM_Plugin_HelloWorld,
 	title        = {SDM_Plugin_HelloWorld},
