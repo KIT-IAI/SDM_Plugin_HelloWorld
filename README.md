@@ -9,3 +9,12 @@ See how to use the PlugIn interface, how the internal database can be accessed a
 ## Dependencies
 
 No further dependencies
+
+```bibtex
+@software{SDM_Plugin_HelloWorld,
+	title        = {SDM_Plugin_HelloWorld},
+	author       = {{Andreas Geiger}},
+	url          = {https://github.com/KIT-IAI/SDM_Plugin_HelloWorld},
+	date         = {2023}
+}
+```
