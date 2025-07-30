@@ -11,7 +11,7 @@ using namespace sdm::plugin;
 IMPLEMENT_PLUGIN(PluginHelloWorld);
 
 HelloWorldAction::HelloWorldAction(MessageDialogFeatureHelper& messageDialog)
-  : ActionFeature("Hello World Example"), m_messageDialog(messageDialog)
+  : ActionFeatureHelper("Hello World Example"), m_messageDialog(messageDialog)
 {
 }
 
@@ -59,8 +59,8 @@ std::vector<Feature*> PluginHelloWorld::getFeatures() const
 ComponentInfo PluginHelloWorld::getComponentInfo(const RequiredComponent& requiredComponent) const
 {
   ComponentRegistry availableComponents;
-  availableComponents.addAvailable(IFCDB_INTERFACE_COMPONENT_NAME, IFCDB_INTERFACE_COMPONENT_VERSION, IFCDB_INTERFACE_COMPONENT_HINT);
-  availableComponents.addAvailable(PLUGIN_INTERFACE_COMPONENT_NAME, PLUGIN_INTERFACE_COMPONENT_VERSION, PLUGIN_INTERFACE_COMPONENT_HINT);
+  availableComponents.addAvailable(IFCDB_INTERFACE_COMPONENT_NAME, IFCDB_INTERFACE_COMPONENT_VERSION, IFCDB_INTERFACE_COMPONENT_HINT, std::atoi(IFCDB_INTERFACE_COMPONENT_DATE.data()));
+  availableComponents.addAvailable(PLUGIN_INTERFACE_COMPONENT_NAME, PLUGIN_INTERFACE_COMPONENT_VERSION, PLUGIN_INTERFACE_COMPONENT_HINT, std::atoi(PLUGIN_INTERFACE_COMPONENT_DATE.data()));
 
   return availableComponents.getInfo(requiredComponent);
 }

@@ -1,7 +1,7 @@
 ﻿#pragma once
 
 #include <Plugin.hpp>
-#include <ActionFeature.hpp>
+#include <ActionFeatureHelper.hpp>
 #include <DocumentObserver.hpp>
 #include <MessageDialogFeature.hpp>
 #include <MessageDialogFeatureHelper.hpp>
@@ -9,7 +9,7 @@
 #include <LogDialogFeatureHelper.hpp>
 #include <ifcdb/IfcDbInclude.h>
 
-class HelloWorldAction : public sdm::plugin::ActionFeature
+class HelloWorldAction : public sdm::plugin::ActionFeatureHelper
 {
   public:
     HelloWorldAction(sdm::plugin::MessageDialogFeatureHelper& messageDialog);
