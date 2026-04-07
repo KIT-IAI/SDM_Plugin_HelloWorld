@@ -11,6 +11,6 @@ add_library(helloworld_plugin SHARED
         helloWorld.cpp
         helloWorld.h)
 
-target_link_libraries(helloworld_plugin PRIVATE ifcexplorer_plugin stdutils ifcdb)
+target_link_libraries(helloworld_plugin PRIVATE ifcexplorer_plugin stdutils ifcdb geographiclib)
 
 install(FILES helloWorld.cpp helloWorld.h PluginHelloWorld.cpp PluginHelloWorld.h cmakelists-template/CMakeLists.txt DESTINATION .)
