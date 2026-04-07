@@ -8,7 +8,7 @@ See how to use the [KITModelViewer](https://github.com/KIT-IAI/SDM_KITModelViewe
   
 ## Dependencies
 
-No further dependencies
+[KITModelViewer](https://www.iai.kit.edu/ifc) - Windows® freeware application. To build the project, you will need the [Plugin SDK](https://github.com/KIT-IAI/SDM_Plugin_SDK).
 
 ## How to cite
 
