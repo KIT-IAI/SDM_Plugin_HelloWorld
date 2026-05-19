@@ -14,9 +14,9 @@ See how to use the [KITModelViewer](https://github.com/KIT-IAI/SDM_KITModelViewe
 
 ```bibtex
 @software{SDM_Plugin_HelloWorld,
-	title        = {SDM_Plugin_HelloWorld},
-	author       = {{Andreas Geiger}},
+	title        = {{SDM\_Plugin\_HelloWorld}},
+	author       = {Andreas Geiger},
 	url          = {https://github.com/KIT-IAI/SDM_Plugin_HelloWorld},
-	date         = {2023}
+	year         = {2023}
 }
 ```
