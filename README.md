@@ -10,6 +10,13 @@ See how to use the [KITModelViewer](https://github.com/KIT-IAI/SDM_KITModelViewe
 
 [KITModelViewer](https://www.iai.kit.edu/ifc) - Windows® freeware application. To build the project, you will need the [Plugin SDK](https://github.com/KIT-IAI/SDM_Plugin_SDK).
 
+### Use of vcpkg:
+
+|Package Name         |Install Command                            |
+|:---                 |:---                                       |
+|fmt                  |vcpkg install fmt triplet=x64-windows      |
+|geographiclib 	      |vcpkg install geographiclib triplet=x64-windows|
+
 ## How to cite
 
 ```bibtex
